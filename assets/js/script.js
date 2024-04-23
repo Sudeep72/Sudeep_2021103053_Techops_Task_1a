@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * add event on element
@@ -12,9 +12,7 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
-
-
+};
 
 /**
  * navbar toggle
@@ -29,7 +27,7 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("active");
-}
+};
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
@@ -37,11 +35,9 @@ const closeNavbar = function () {
   navbar.classList.remove("active");
   overlay.classList.remove("active");
   document.body.classList.remove("active");
-}
+};
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
-
-
 
 /**
  * header active when window scroll down to 100px
@@ -55,11 +51,9 @@ const activeElemOnScroll = function () {
   } else {
     header.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
-
-
 
 /**
  * about
@@ -71,10 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
   moreAboutBtn.addEventListener("click", function (event) {
     event.preventDefault();
     additionalContent.classList.toggle("visible");
-    moreAboutBtn.innerText = additionalContent.classList.contains("visible") ? "Show Less" : "More About Us";
+    moreAboutBtn.innerText = additionalContent.classList.contains("visible")
+      ? "Show Less"
+      : "More About Us";
   });
 });
-
 
 /**
  * projects
@@ -108,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         project.style.display = "none";
         if (index === hiddenProjects.length - 1) {
-          showMoreButton.style.display = "flex"; 
+          showMoreButton.style.display = "flex";
           showLessButton.style.display = "none";
         }
       }, 500);
@@ -139,24 +134,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 /**
  * Tech stack
  */
 
 function showSubsection(section) {
-  var subsections = document.querySelectorAll('.subsection');
-  subsections.forEach(function(subsection) {
-    subsection.classList.remove('show');
+  var subsections = document.querySelectorAll(".subsection");
+  subsections.forEach(function (subsection) {
+    subsection.classList.remove("show");
   });
 
-  document.getElementById(section).classList.add('show');
+  document.getElementById(section).classList.add("show");
 
-  var buttons = document.querySelectorAll('.button');
-  buttons.forEach(function(button) {
-    button.classList.remove('active');
+  var buttons = document.querySelectorAll(".button");
+  buttons.forEach(function (button) {
+    button.classList.remove("active");
   });
-  document.getElementById(section + '-btn').classList.add('active');
+  document.getElementById(section + "-btn").classList.add("active");
 }
-showSubsection('frontend');;
-
+showSubsection("frontend");
