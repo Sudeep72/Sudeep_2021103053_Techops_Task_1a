@@ -1336,6 +1336,11 @@ li {
   }
 }
 
+
+/**
+* TESTIMONIALS
+*/
+
 @media only screen and (max-width: 767px) {
   .carousel {
     padding-top: 155%;
