@@ -1119,6 +1119,7 @@ li {
     min-width: 100%;
   }
 
+
   /**
    * FOOTER
    */
@@ -1233,6 +1234,7 @@ li {
   .btn-secondary {
     --padding: 14px 32px;
   }
+  
 
   /**
    * FOOTER
@@ -1331,5 +1333,11 @@ li {
 
   .project-list > *:is(:first-child, :nth-child(2)) {
     width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel {
+    padding-top: 155%;
   }
 }
