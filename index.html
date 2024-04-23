@@ -36,9 +36,9 @@
     - fontawesome link
     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-icons/4.2.0/react-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-icons/4.2.0/react-icons.min.js"></script>
 
 
     <!-- 
@@ -48,6 +48,15 @@
   </head>
 
   <body>
+    <!--
+      - SCROLL PROGRESS
+    -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress"></div>
+    </div>
+
+    
+
     <!-- 
     - #HEADER
   -->
@@ -104,6 +113,8 @@
 
     <main>
       <article>
+
+
         <!-- 
         - #HERO
       -->
@@ -127,7 +138,7 @@
                 width="521"
                 height="675"
                 alt="hero banner"
-                class="w-100"
+                class="w-100 sway"
               />
 
               <img
@@ -193,81 +204,81 @@
         - #SERVICES
       -->
 
-      <section class="section service has-shape" id="services" aria-label="service">
-        <div class="container">
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">Our included <span class="span">services</span>.</h2>
-            <p class="section-text">Our services are tailored to meet your specific needs, providing comprehensive solutions to boost your business.</p>
-          </div>
-      
-          <div class="accordion">
-            <div class="accordion-item">
-              <input type="checkbox" id="accordion-1" class="accordion-checkbox" hidden>
-              <label class="accordion-heading" for="accordion-1">
-                Mobile Apps
-              </label>
-              <div class="accordion-content">
-                <div class="service-card">
-                  <img src="./assets/images/service-1.svg" width="100" height="100" loading="lazy" alt="Mobile Apps" />
-                  <p><br/></p>
-                  <p class="card-text">
-                    Mobile apps are essential for businesses looking to expand their reach and engage with customers on a more personal level. We specialize in designing and developing mobile applications tailored to your business needs. From intuitive user interfaces to robust backend systems, we ensure that your app stands out in the crowded app marketplace.
-                  </p>
-                </div>
-              </div>
-            </div>
-      
-            <div class="accordion-item">
-              <input type="checkbox" id="accordion-2" class="accordion-checkbox" hidden>
-              <label class="accordion-heading" for="accordion-2">
-                Branding Strategy
-              </label>
-              <div class="accordion-content">
-                <div class="service-card">
-                  <img src="./assets/images/service-2.svg" width="100" height="100" loading="lazy" alt="Branding Strategy" />
-                  <p><br/></p>
-                  <p class="card-text">
-                    Your brand is more than just a logo; it's the essence of your business. Our branding experts work closely with you to develop a comprehensive branding strategy that resonates with your target audience. From logo design to brand messaging, we help you establish a strong and memorable brand identity that sets you apart from the competition.
-                  </p>
-                </div>
-              </div>
-            </div>
-      
-            <div class="accordion-item">
-              <input type="checkbox" id="accordion-3" class="accordion-checkbox" hidden>
-              <label class="accordion-heading" for="accordion-3">
-                Graphics Design
-              </label>
-              <div class="accordion-content">
-                <div class="service-card">
-                  <img src="./assets/images/service-3.svg" width="100" height="100" loading="lazy" alt="Graphics Design" />
-                  <p><br/></p>
-                  <p class="card-text">
-                    Eye-catching visuals are crucial for capturing audience attention and conveying your message effectively. Our team of talented graphic designers creates stunning designs that reflect your brand's personality and values. Whether you need marketing materials, social media graphics, or website design, we've got you covered with creative solutions that leave a lasting impression.
-                  </p>
-                </div>
-              </div>
-            </div>
-      
-            <div class="accordion-item">
-              <input type="checkbox" id="accordion-4" class="accordion-checkbox" hidden>
-              <label class="accordion-heading" for="accordion-4">
-                Online Marketing
-              </label>
-              <div class="accordion-content">
-                <div class="service-card">
-                  <img src="./assets/images/service-4.svg" width="100" height="100" loading="lazy" alt="Online Marketing" />
-                  <p><br/></p>
-                  <p class="card-text">
-                    In today's digital age, online marketing is essential for reaching and engaging with your target audience. Our online marketing services cover everything from search engine optimization (SEO) and pay-per-click (PPC) advertising to social media management and email marketing. We develop customized strategies to help you increase brand visibility, drive traffic, and convert leads into loyal customers.
-                  </p>
-                </div>
-              </div>
+        <section class="section service has-shape" id="services" aria-label="service">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="h2 section-title">Our included <span class="span">services</span>.</h2>
+        <p class="section-text">Our services are tailored to meet your specific needs, providing comprehensive solutions to boost your business.</p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="accordion-1" class="accordion-checkbox" hidden>
+          <label class="accordion-heading" for="accordion-1">
+            Mobile Apps
+          </label>
+          <div class="accordion-content">
+            <div class="service-card">
+              <img src="./assets/images/service-1.svg" width="100" height="100" loading="lazy" alt="Mobile Apps" />
+              <p><br/></p>
+              <p class="card-text">
+                Mobile apps are essential for businesses looking to expand their reach and engage with customers on a more personal level. We specialize in designing and developing mobile applications tailored to your business needs. From intuitive user interfaces to robust backend systems, we ensure that your app stands out in the crowded app marketplace.
+              </p>
             </div>
           </div>
-          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt="" class="shape shape-1" />
         </div>
-      </section>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="accordion-2" class="accordion-checkbox" hidden>
+          <label class="accordion-heading" for="accordion-2">
+            Branding Strategy
+          </label>
+          <div class="accordion-content">
+            <div class="service-card">
+              <img src="./assets/images/service-2.svg" width="100" height="100" loading="lazy" alt="Branding Strategy" />
+              <p><br/></p>
+              <p class="card-text">
+                Your brand is more than just a logo; it's the essence of your business. Our branding experts work closely with you to develop a comprehensive branding strategy that resonates with your target audience. From logo design to brand messaging, we help you establish a strong and memorable brand identity that sets you apart from the competition.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="accordion-3" class="accordion-checkbox" hidden>
+          <label class="accordion-heading" for="accordion-3">
+            Graphics Design
+          </label>
+          <div class="accordion-content">
+            <div class="service-card">
+              <img src="./assets/images/service-3.svg" width="100" height="100" loading="lazy" alt="Graphics Design" />
+              <p><br/></p>
+              <p class="card-text">
+                Eye-catching visuals are crucial for capturing audience attention and conveying your message effectively. Our team of talented graphic designers creates stunning designs that reflect your brand's personality and values. Whether you need marketing materials, social media graphics, or website design, we've got you covered with creative solutions that leave a lasting impression.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="accordion-4" class="accordion-checkbox" hidden>
+          <label class="accordion-heading" for="accordion-4">
+            Online Marketing
+          </label>
+          <div class="accordion-content">
+            <div class="service-card">
+              <img src="./assets/images/service-4.svg" width="100" height="100" loading="lazy" alt="Online Marketing" />
+              <p><br/></p>
+              <p class="card-text">
+                In today's digital age, online marketing is essential for reaching and engaging with your target audience. Our online marketing services cover everything from search engine optimization (SEO) and pay-per-click (PPC) advertising to social media management and email marketing. We develop customized strategies to help you increase brand visibility, drive traffic, and convert leads into loyal customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt="" class="shape shape-1" />
+    </div>
+  </section>
         
         
 

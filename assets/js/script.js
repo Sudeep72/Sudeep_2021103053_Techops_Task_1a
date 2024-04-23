@@ -153,3 +153,43 @@ function showSubsection(section) {
   document.getElementById(section + "-btn").classList.add("active");
 }
 showSubsection("frontend");
+
+/**
+ * Scroll Progress
+ */
+
+window.addEventListener("scroll", function() {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.scrollHeight;
+  const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+  
+  document.querySelector(".scroll-progress").style.width = scrollPercentage + "%";
+});
+
+/**
+ * Sway
+ */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('.sway');
+
+  images.forEach(image => {
+      image.addEventListener('mousemove', function (e) {
+          const x = e.clientX - e.target.offsetLeft;
+          const y = e.clientY - e.target.offsetTop;
+
+          const midX = image.offsetWidth / 2;
+          const midY = image.offsetHeight / 2;
+
+          const deltaX = (x - midX) / midX;
+          const deltaY = (y - midY) / midY;
+
+          image.style.transform = `rotateY(${deltaX * 10}deg) rotateX(${-deltaY * 10}deg)`;
+      });
+
+      image.addEventListener('mouseleave', function () {
+          image.style.transform = 'rotateY(0deg) rotateX(0deg)';
+      });
+  });
+});
